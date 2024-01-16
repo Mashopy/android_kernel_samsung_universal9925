@@ -12,6 +12,7 @@ FLAG=0
 $(info kperfmon_DUMMY="CONFIG_KPERFMON is off.")
 endif
 
+ifneq ($(FLAG), 0)
 ifneq ($(shell [ -e $(srctree)/include/linux/olog.pb.h ] && echo exist), exist)
 $(info kperfmon_DUMMY="olog.pb.h file is missing... retrying")
 
@@ -39,6 +40,7 @@ $(info kperfmon_DUMMY="$(shell cp -f $(srctree)/../system/core/liblog/include/lo
 ifneq ($(shell [ -e $(srctree)/include/linux/perflog.h ] && echo exist), exist)
 FLAG=0
 $(info kperfmon_DUMMY="perflog.h file is missing.")
+endif
 endif
 
 ifeq ($(FLAG), 1)
