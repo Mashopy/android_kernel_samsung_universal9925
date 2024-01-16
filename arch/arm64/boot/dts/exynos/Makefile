@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: GPL-2.0-only
+dtb-y += exynos7-espresso.dtb
+dtb-y += s5e9925_evt0.dtb
+dtb-y += s5e9925.dtb
+dtb-y += exynos5433-tm2.dtb
+dtb-y += exynos2100.dtb
+dtb-y += s5e8825.dtb
+dtbo-y += board/univ/s5e8825-universal8825_r00.dtbo
+dtbo-y += board/univ/s5e9925_evt0-universal9925_rev00.dtbo
+dtbo-y += board/univ/s5e9925-universal9925_rev17.dtbo
+dtbo-y += board/univ/s5e9925-universal9925_rev1b.dtbo
+dtbo-y += board/univ/s5e9925-universal9925_rev00.dtbo
+dtbo-y += board/erd/s5e9925_s6165-erd9925.dtbo
+dtbo-y += board/erd/s5e8825-erd8825_r10.dtbo
+dtbo-y += board/erd/s5e9925_evt0-erd9925_r11.dtbo
+dtbo-y += board/erd/s5e9925_evt0-erd9925.dtbo
+dtbo-y += board/erd/s5e9925-erd9925.dtbo
+dtbo-y += board/erd/s5e9925_evt0_s5300-erd9925.dtbo
+dtbo-y += board/erd/s5e9925-erd9925_r18.dtbo
+dtbo-y += board/erd/s5e9925_evt0_s5300-erd9925_r11.dtbo
+dtbo-y += board/erd/s5e9925-erd9925_r13.dtbo
+dtbo-y += board/erd/s5e8825-erd8825.dtbo
+dtbo-y += board/erd/s5e9925_s6165-erd9925_r17.dtbo
+dtbo-y += board/erd/s5e8825-erd8825_r11.dtbo
+dtb-y += exynos5433-tm2e.dtb
+
+always-y        := $(dtb-y) $(dtbo-y)
+subdir-y        := $(dts-dirs)
+clean-files     := *.dtb *.dtbo
