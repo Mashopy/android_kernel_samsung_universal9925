@@ -119,7 +119,7 @@ void fill_report(struct hdd_context *hdd_ctx, char *title,
 	uint32_t *pcl_freqs, uint32_t pcl_len)
 {
 	int i;
-	char buf[5] = {0};
+	char buf[12] = {0};
 	uint8_t sys_pref = 0;
 
 	if (report_idx >= NUMBER_OF_SCENARIO) {
