@@ -823,6 +823,7 @@ CONFIG_MODULE_SCMVERSION=y
 # CONFIG_UNUSED_SYMBOLS is not set
 CONFIG_TRIM_UNUSED_KSYMS=y
 CONFIG_UNUSED_KSYMS_WHITELIST="gki/abi_symbollist.raw"
+CONFIG_KMI_SYMBOL_LISTS="android/abi_gki_aarch64_type_visibility android/abi_gki_aarch64_core android/abi_gki_aarch64_db845c android/abi_gki_aarch64_exynos android/abi_gki_aarch64_exynosauto android/abi_gki_aarch64_fips140 android/abi_gki_aarch64_galaxy android/abi_gki_aarch64_generic android/abi_gki_aarch64_hikey960 android/abi_gki_aarch64_imx android/abi_gki_aarch64_lenovo android/abi_gki_aarch64_mtk android/abi_gki_aarch64_oplus android/abi_gki_aarch64_qcom android/abi_gki_aarch64_rockchip android/abi_gki_aarch64_unisoc android/abi_gki_aarch64_virtual_device android/abi_gki_aarch64_vivo android/abi_gki_aarch64_xiaomi android/abi_gki_aarch64_asus android/abi_gki_aarch64_transsion android/abi_gki_aarch_galaxy_presubmit abi_greylist"
 CONFIG_MODULES_TREE_LOOKUP=y
 CONFIG_BLOCK=y
 CONFIG_BLK_RQ_ALLOC_TIME=y
@@ -850,11 +851,6 @@ CONFIG_BLK_SEC_STATS=m
 # CONFIG_PARTITION_ADVANCED is not set
 CONFIG_MSDOS_PARTITION=y
 CONFIG_EFI_PARTITION=y
-
-#
-# Block kunit
-#
-# end of Block kunit
 # end of Partition Types
 
 CONFIG_BLOCK_COMPAT=y
@@ -7342,7 +7338,6 @@ CONFIG_MUIC_USE_MODULE_PARAM=y
 # Samsung STI Options
 #
 CONFIG_SEC_STI=y
-CONFIG_SEC_AUTO_INPUT=m
 CONFIG_SENSORS_FLICKER_SELF_TEST=m
 CONFIG_SENSORS_TSL2510=m
 CONFIG_SEC_INPUT_BOOSTER=m
@@ -7876,12 +7871,6 @@ CONFIG_NLS_UTF8=y
 # CONFIG_DLM is not set
 CONFIG_UNICODE=y
 # CONFIG_UNICODE_NORMALIZATION_SELFTEST is not set
-
-#
-# File systems kunit
-#
-# end of File systems kunit
-
 CONFIG_IO_WQ=y
 # end of File systems
 
