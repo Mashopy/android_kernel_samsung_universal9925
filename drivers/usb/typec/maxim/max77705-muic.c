@@ -2486,7 +2486,7 @@ int max77705_muic_probe(struct max77705_usbc_platform_data *usbc_data)
 	struct max77705_platform_data *mfd_pdata = usbc_data->max77705_data;
 	struct max77705_muic_data *muic_data;
 	int ret = 0;
-#if IS_ENABLED(CONFIG_ARCH_QCOM) && !defined(CONFIG_USB_ARCH_EXYNOS)
+#if !defined(CONFIG_USB_ARCH_EXYNOS)
 	u8 pogo_adc = 0;
 #endif
 	pr_info("%s\n", __func__);
