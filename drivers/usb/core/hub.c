@@ -4724,7 +4724,7 @@ static int get_bMaxPacketSize0(struct usb_device *udev,
 				udev->speed > USB_SPEED_FULL))
 			break;
 #if defined(CONFIG_USB_HOST_SAMSUNG_FEATURE)
-		if (r == -ETIMEDOUT && udev->reset_resume == 1) {
+		if (rc == -ETIMEDOUT && udev->reset_resume == 1) {
 			dev_err(&udev->dev, "get descriptor fail in reset resume\n");
 			break;
 		}
