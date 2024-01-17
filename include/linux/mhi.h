@@ -403,7 +403,6 @@ struct mhi_controller {
 	struct mhi_device *mhi_dev;
 	struct dentry *debugfs_dentry;
 	void __iomem *regs;
-	size_t reg_len;
 	void __iomem *bhi;
 	void __iomem *bhie;
 	void __iomem *wake_db;
