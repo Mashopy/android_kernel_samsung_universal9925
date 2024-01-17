@@ -309,7 +309,7 @@ alternative_if ARM64_HAS_ADDRESS_AUTH
 alternative_else_nop_endif
 1:
 
-	scs_load tsk, x20
+	scs_load_current
 	.else
 #ifdef CONFIG_SEC_DEBUG_EXCEPTION_STACK
 	add	x21, sp, #(S_FRAME_SIZE+PRESERVE_STACK_SIZE)
@@ -1146,7 +1146,7 @@ SYM_FUNC_START(cpu_switch_to)
 	msr	sp_el0, x1
 	ptrauth_keys_install_kernel x1, x8, x9, x10
 	scs_save x0, x8
-	scs_load x1, x8
+	scs_load_current
 	ret
 SYM_FUNC_END(cpu_switch_to)
 NOKPROBE(cpu_switch_to)
